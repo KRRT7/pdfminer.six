@@ -51,6 +51,7 @@ dev = [
     "pytest",
     "pre-commit",
     "codespell",
+    "codeflash",
 ]
 docs = [
     "sphinx",
@@ -144,3 +145,6 @@ ignore_missing_imports = true
 [[tool.mypy.overrides]]
 module = "atheris.*"
 ignore_missing_imports = true
+
+[tool.uv.sources]
+codeflash = { path = "../../cf_org/codeflash", editable = true }
