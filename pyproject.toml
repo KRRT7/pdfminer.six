@@ -148,3 +148,11 @@ ignore_missing_imports = true
 
 [tool.uv.sources]
 codeflash = { path = "../../cf_org/codeflash", editable = true }
+
+[tool.codeflash]
+# All paths are relative to this pyproject.toml's directory.
+module-root = "pdfminer"
+tests-root = "tests"
+ignore-paths = []
+disable-telemetry = true
+formatter-cmds = ["disabled"]
